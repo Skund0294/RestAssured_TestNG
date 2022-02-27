@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tests.testclasses.UpdateExistingBookingAPI">
+      <class name="com.tests.testclasses.NewBookingAPI">
         <methods>
+          <include name="new_Booking_API_Test01"/>
           <include name="setBaseURIAndAuthToken"/>
-          <include name="update_Existing_Booking_API_Test01"/>
+          <include name="new_Booking_API_Test02"/>
         </methods>
-      </class> <!-- com.tests.testclasses.UpdateExistingBookingAPI -->
+      </class> <!-- com.tests.testclasses.NewBookingAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
