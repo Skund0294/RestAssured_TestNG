@@ -25,6 +25,7 @@ public class UpdateExistingBookingAPI extends BaseTest {
 		int bookingtoupdate = NewBookingAPI.newbookingid;
 
 		ExtentTestManager.logMessageInReport("BOOKING BEING UPDATED : " + bookingtoupdate);
+		System.out.println("BOOKING BEING UPDATED : " + bookingtoupdate);
 		
 		BookingDatesPOJO datesdata = new BookingDatesPOJO();
 		datesdata.setCheckin(RandomUtils.generateDate(6));
@@ -45,16 +46,29 @@ public class UpdateExistingBookingAPI extends BaseTest {
 
 	@Test
 	public void update_Existing_Booking_API_Test02() {
+		
+		System.out.println(response.asPrettyString());
 
-		ExtentTestManager.logMessageInReport("FIRSTNAME : " + response.jsonPath().get("firstname"));
-		ExtentTestManager.logMessageInReport("LASTNAME : " + response.jsonPath().get("lastname"));
-		ExtentTestManager.logMessageInReport("TOTAL PRICE : " + response.jsonPath().get("totalprice"));
-		ExtentTestManager.logMessageInReport("ADDITIONAL NEEDS : " + response.jsonPath().get("additionalneeds"));
-		ExtentTestManager.logMessageInReport("DEPOSIT PAID : " + response.jsonPath().get("depositpaid"));
-		ExtentTestManager.logMessageInReport("CHECKIN ON : " + response.jsonPath().get("bookingdates.checkin"));
-		ExtentTestManager.logMessageInReport("CHECKOUT ON : " + response.jsonPath().get("bookingdates.checkout"));
-		ExtentTestManager.logMessageInReport("STATUS CODE : " + String.valueOf(TestUtils.getResponseStatusCode(response)));
-		ExtentTestManager.logMessageInReport("TIME TAKEN : " + String.valueOf(TestUtils.getRequestTimeTaken(response)));
+		/*
+		 * ExtentTestManager.logMessageInReport("FIRSTNAME : " +
+		 * response.jsonPath().get("firstname"));
+		 * ExtentTestManager.logMessageInReport("LASTNAME : " +
+		 * response.jsonPath().get("lastname"));
+		 * ExtentTestManager.logMessageInReport("TOTAL PRICE : " +
+		 * response.jsonPath().get("totalprice"));
+		 * ExtentTestManager.logMessageInReport("ADDITIONAL NEEDS : " +
+		 * response.jsonPath().get("additionalneeds"));
+		 * ExtentTestManager.logMessageInReport("DEPOSIT PAID : " +
+		 * response.jsonPath().get("depositpaid"));
+		 * ExtentTestManager.logMessageInReport("CHECKIN ON : " +
+		 * response.jsonPath().get("bookingdates.checkin"));
+		 * ExtentTestManager.logMessageInReport("CHECKOUT ON : " +
+		 * response.jsonPath().get("bookingdates.checkout"));
+		 * ExtentTestManager.logMessageInReport("STATUS CODE : " +
+		 * String.valueOf(TestUtils.getResponseStatusCode(response)));
+		 * ExtentTestManager.logMessageInReport("TIME TAKEN : " +
+		 * String.valueOf(TestUtils.getRequestTimeTaken(response)));
+		 */
 
 	}
 
