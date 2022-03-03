@@ -34,7 +34,7 @@ pipeline{
  keepAll: true,
  reportDir: 'ExtentReports',
  reportFiles: '*.html',
- reportName: 'My Reports',
- reportTitles: 'The Report'])
+ reportName: 'Extent Reports',
+ reportTitles: 'Extent Report'])
 		}	
 }}}

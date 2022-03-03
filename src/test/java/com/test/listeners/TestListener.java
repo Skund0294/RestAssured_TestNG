@@ -33,6 +33,7 @@ public class TestListener implements ITestListener {
 		String logtext = "<b>" + methodname.toUpperCase() + " - PASSED" + "</b>";
 		Markup m = MarkupHelper.createLabel(logtext, ExtentColor.GREEN);
 		ExtentTestManager.test.pass(m);
+		System.out.println(result.getMethod().getMethodName() + " has PASSED");
 
 	}
 
@@ -42,6 +43,7 @@ public class TestListener implements ITestListener {
 		String logtext = "<b>" + methodname.toUpperCase() + " - FAILED" + "</b>";
 		Markup m = MarkupHelper.createLabel(logtext, ExtentColor.RED);
 		ExtentTestManager.test.fail(m);
+		System.out.println(result.getMethod().getMethodName() + " has FAILED");
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -50,6 +52,7 @@ public class TestListener implements ITestListener {
 		String logtext = "<b>" + methodname.toUpperCase() + " - SKIPPED" + "</b>";
 		Markup m = MarkupHelper.createLabel(logtext, ExtentColor.AMBER);
 		ExtentTestManager.test.skip(m);
+		System.out.println(result.getMethod().getMethodName() + " has been SKIPPED");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
