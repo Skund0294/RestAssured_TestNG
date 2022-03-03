@@ -7,6 +7,10 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="com.tests.testclasses.NewBookingAPI" />
+			<class name="com.tests.testclasses.FetchAllExistingBookingsAPI" />
+			<class name="com.tests.testclasses.FetchBookingByBookingIDAPI" />
+			<class name="com.tests.testclasses.DeleteBookingAPI" />
+			<class name="com.tests.testclasses.UpdateExistingBookingAPI" />
 		</classes>
 	</test>
 </suite>
