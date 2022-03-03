@@ -32,6 +32,7 @@ public class FetchBookingByBookingIDAPI extends BaseTest {
 		ExtentTestManager.logMessageInReport("DETAILS RETRIEVED : " + response.asPrettyString());
 		ExtentTestManager.logMessageInReport("STATUS CODE : " + String.valueOf(TestUtils.getResponseStatusCode(response)));
 		ExtentTestManager.logMessageInReport("TIME TAKEN : " + String.valueOf(TestUtils.getRequestTimeTaken(response)));
+		TestUtils.assertResponseStatusCode(response, 200);
 
 	}
 
