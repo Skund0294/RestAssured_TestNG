@@ -7,12 +7,7 @@ pipeline{
         jdk "JDK"
     }
   
-  parameters{
-  string(name:'Tag to execute', defaultValue:'@SampleTest')
-  string(name:'Threads', defaultValue:'12')
-  }
-	
-	stages{
+  stages{
 		stage("Clean and Build"){
 		steps{
 			script{
