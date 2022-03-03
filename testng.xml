@@ -10,7 +10,6 @@
 			<class name="com.tests.testclasses.FetchAllExistingBookingsAPI" />
 			<class name="com.tests.testclasses.FetchBookingByBookingIDAPI" />
 			<class name="com.tests.testclasses.DeleteBookingAPI" />
-			<class name="com.tests.testclasses.UpdateExistingBookingAPI" />
 		</classes>
 	</test>
 </suite>
