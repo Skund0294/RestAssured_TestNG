@@ -24,7 +24,7 @@ public class UpdateExistingBookingAPI extends BaseTest {
 		String authtoken = CreateAuthToken.createAuthToken();
 		int bookingtoupdate = NewBookingAPI.newbookingid;
 
-		ExtentTestManager.logMessageInReport("BOOKING UPDATED : " + bookingtoupdate);
+		ExtentTestManager.logMessageInReport("BOOKING BEING UPDATED : " + bookingtoupdate);
 		
 		BookingDatesPOJO datesdata = new BookingDatesPOJO();
 		datesdata.setCheckin(RandomUtils.generateDate(6));
