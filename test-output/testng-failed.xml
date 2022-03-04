@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tests.testclasses.FetchBookingByBookingIDAPI">
+      <class name="com.tests.testclasses.UpdateExistingBookingAPI">
         <methods>
           <include name="setBaseURIAndAuthToken"/>
-          <include name="fetch_Booking_By_Booking_ID_API_Test02"/>
+          <include name="update_Existing_Booking_API_Test02"/>
         </methods>
-      </class> <!-- com.tests.testclasses.FetchBookingByBookingIDAPI -->
+      </class> <!-- com.tests.testclasses.UpdateExistingBookingAPI -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
